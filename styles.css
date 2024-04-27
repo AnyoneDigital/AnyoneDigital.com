@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+:root {
+    --main-color: #007bff;
+    --font-size: 16px;
+    --red: #a82332;
+    --white: #f2f0f0;
+    --grey: #4d4d4d;
+    --deep-grey: #272727;
+    --mid-grey: #2f2f2f;
+    --light-grey: #888888;
+    --background-grey: #181818;
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: transparent transparent;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer and Microsoft Edge */
+    overflow-x:hidden;
+}
+
+/* Hide scrollbar for Webkit (Safari/Chrome) */
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-grey);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(54, 54, 54);
+    /* Adjust the scrollbar thumb color as needed */
+    border-radius: 0.25rem;
+    /* Adjust the scrollbar thumb radius as needed */
+}
+
+#note {
+    /* color: grey; */
+}
+
+.container {
+    background-color: var(--background-grey);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 6vw;
+    font-family: var(--font-family);
+    font-size: 1.3vw;
+}
+
+.navbar img {
+    height: 5vw;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 80%;
+    justify-content: end;
+    margin-right: 2vw;
+}
+
+.navbar ul li {
+    padding: 0 1vw;
+}
+
+.block {
+    display: flex;
+}
+
+.subImg {
+    width: 50%;
+}
+
+.subBlock {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.subBlock ul {
+    width: 70%;
+    list-style: none;
+}
+
+.smallTxt {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1.25vw;
+}
+
+.largeTxt {
+    color: var(--white);
+    font-size: 5vw;
+}
+
+.greyTxt {
+    color: var(--grey);
+    line-height: 20px;
+    font-family: var(--font-family);
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+
+
+}
+
+.liButton button {
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+    background-color: var(--red);
+    color: var(--white);
+    border: 0px;
+    font-family: var(--font-family);
+    font-size: 1.1vw;
+}
+
+.block2 {
+    position: relative;
+    height: 30vw;
+    /* padding: 5vw 0; */
+}
+
+.dummyBox {
+    background-color: var(--deep-grey);
+    width: 50%;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+
+}
+
+.actualBlock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greyCard {
+    background-color: var(--mid-grey);
+    width: 20%;
+    height: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 2vw;
+    margin: 0 1vw;
+
+}
+
+.cardIcon i {
+    color: var(--red);
+    font-size: 3vw;
+    margin: 1vw 0;
+}
+
+.cardHead {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.cardTxt {
+    width: 80%;
+    margin-bottom: 2vw;
+    color: var(--light-grey);
+}
+
+.redTxt {
+    color: var(--red);
+    font-size: 1vw;
+}
+
+.redCard {
+    background-color: var(--red);
+}
+
+.redCard>* {
+    color: var(--white) !important;
+}
+
+.whiteIcon>* {
+    color: var(--white) !important;
+}
+
+.heading {
+    font-size: 4vw;
+    /* background-color: #007bff; */
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
+
+.abtBlock {
+    justify-content: flex-end;
+}
+
+.abtHead {
+    padding: 1vw 0;
+}
+
+.workBlock {
+    background-color: var(--deep-grey);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content !important;
+    margin-top: 1vw;
+}
+
+.workHead {
+    font-size: 3vw;
+    display: flex;
+    padding-top: 3vw;
+    color: var(--light-grey);
+    letter-spacing: 0.1vw;
+    padding-bottom: 1vw;
+}
+
+.worksubBlock {
+    width: 80%;
+    height: fit-content;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    /* background-color: #007bff; */
+}
+
+.workCard {
+    width: 50%;
+    height: fit-content;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+}
+
+.workCard>* {
+    margin-top: 0.05vw;
+}
+
+.internBlock {
+    padding: 4vw 0;
+}
+
+.termsDummy {
+    height: 50%;
+    width: 100%;
+    background-color: var(--red);
+}
+
+.termsCard {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.termsBlockTxt {
+    list-style: none;
+}
+
+
+
+.termsBlockButton {
+    list-style: none;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 2vw;
+
+}
+
+.termsBtn button {
+    width: 15vw;
+}
+
+.termsHead {
+    font-size: 3vw;
+    padding-bottom: 1vw;
+}
+
+.termsBlock {
+    background-color: var(--deep-grey);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.removeAnchor {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        font-size: 2vw;
+        padding-top: 2vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar img {
+        display: flex;
+    }
+
+    .navbar ul {
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .introBlock {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .introBlock img {
+        display: none;
+    }
+
+    .introBlock>.subBlock {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vw;
+
+    }
+
+    .introBlock>.subBlock ul {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introBlock .smallTxt {
+        font-size: 15vw;
+
+    }
+
+    .introBlock .largeTxt {
+        font-size: 5vw;
+        margin-left: 1vw;
+    }
+
+    .introBlock .greyTxt {
+        font-size: 3vw;
+        display: none;
+    }
+
+    .introBlock .liButton button {
+        font-size: 3vw;
+        margin-top: 5vw;
+    }
+
+
+    .block2 {
+        margin: 5vw 0;
+        height: fit-content;
+    }
+
+    .block2 .dummyBox {
+        display: none;
+    }
+
+    .block2 .actualBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block2 .actualBlock ul {
+        width: 80%;
+        height: 50vw;
+        margin-top: 3vw;
+        justify-content: flex-start;
+        padding-top: 5vw;
+        padding-left: 5vw;
+        border-radius: 2vw;
+
+    }
+
+    .cardIcon i {
+        font-size: 10vw;
+    }
+
+    .cardHead {
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+
+    .cardTxt {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .redTxt {
+        font-size: 3vw;
+        margin-top: 2vw;
+
+    }
+
+
+    .abtTopBlock {
+        height: 120vw;
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .abtBlock ul .greyTxt {
+        display: unset;
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+        text-align: center;
+        margin-top: 2vw;
+
+
+    }
+
+
+
+    .workHead {
+        font-size: 4vw;
+        margin-top: 2vw;
+        margin-bottom: 0;
+    }
+
+    .worksubBlock .actualBlock ul {
+        margin: 0;
+        height: fit-content;
+        width: 100%;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+        margin-top: 4vw;
+
+    }
+
+    .workCard {
+        width: 100%;
+        height: 500%;
+    }
+
+    .internBlock ul .greyTxt {
+        display: unset;
+        width: 100%;
+        font-size: 4vw;
+        line-height: 5vw;
+        text-align: center;
+        margin-top: 2vw;
+
+
+    }
+
+    .internBlock {
+        height: 120vw;
+        width: 85%;
+        margin: auto;
+    }
+
+    .termsBlock {
+        padding: 5vw;
+    }
+
+
+    .termsBlock .actualBlock ul {
+        width: 90%;
+        align-items: center;
+        padding: 3vw;
+        height: 50%;
+    }
+
+    .termsBlockButton li button {
+        font-size: 3vw;
+        width: 35vw;
+        margin-right: 6vw;
+    }
+
+    .termsHead {
+        font-size: 4vw;
+    }
+
+    .termsBlock .cardTxt {
+        font-size: 3vw;
+    }
+}
+
+footer {
+    /* background-color: #007bff; */
+    margin: 5vw 0;
+}
+
+.footerIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: var(--grey);
+
+}
+
+.footerIcon li {
+    font-size: 3vw;
+    margin: 1vw 1vw;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
